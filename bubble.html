@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+        } 
+  
+        /* To give the containers 
+           in spherical shape */ 
+        .dot { 
+            border-radius: 50%; 
+        } 
+  
+        .dot span { 
+  
+            position: absolute; 
+            display: block; 
+            border: 5px; 
+            border-radius: 50%; 
+            animation: animate 3s ease-in-out infinite; 
+  
+        } 
+  
+        /*the animation*/ 
+        @keyframes animate { 
+            0% { 
+                transform: translateY(-300px); 
+            } 
+  
+            50% { 
+                transform: translateY(190px); 
+                width: -100px; 
+                height: +100px; 
+  
+            } 
+  
+            100% { 
+                transform: translateY(-300px); 
+            } 
+        } 
+  
+        /* Each bubble is defined in a 
+           separate section */ 
+        /* Set the color, opacity, delay and 
+           duration(i.e different speed) */ 
+        .dot span:nth-child(1) { 
+            top: 300px; 
+            left: 250px; 
+            height: 160px; 
+            width: 160px; 
+            background-color: yellow; 
+            opacity: 0.2; 
+            animation-delay: 0.3s; 
+            animation-direction: reverse; 
+        } 
+  
+        .dot span:nth-child(2) { 
+            top: 310px; 
+            left: 400px; 
+            height: 190px; 
+            width: 190px; 
+            background-color: green; 
+            opacity: 0.2; 
+            animation-delay: 0.3s; 
+            animation-direction: reverse; 
+            animation-duration: 2.3s; 
+        } 
+  
+        .dot span:nth-child(3) { 
+            top: 300px; 
+            left: 700px; 
+            height: 140px; 
+            width: 140px; 
+            background-color: #a97f58; 
+            opacity: 0.9; 
+            animation-delay: 0.2s; 
+            animation-direction: reverse; 
+            animation-duration: 2.6s; 
+        } 
+  
+        .dot span:nth-child(4) { 
+            top: 300px; 
+            left: 1080px; 
+            height: 200px; 
+            width: 200px; 
+            background-color: #f10d3f; 
+            opacity: 0.2; 
+            animation-delay: 0.2s; 
+            animation-direction: reverse; 
+            animation-duration: 2.3s; 
+        } 
+        .dot span:nth-child(5) { 
+            top: 300px; 
+            left: 108px; 
+            height: 200px; 
+            width: 100px; 
+            background-color: #0dc3f1; 
+            opacity: 0.2; 
+            animation-delay: 1.6s; 
+            animation-direction: reverse; 
+            animation-duration: 2.6s; 
+        } 
+    </style> 
+</head>
+<body>
+    <div class="dot">
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+ 
+</body>
+</html>
