@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>  
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background:black; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        } 
+      
+        .spicy { 
+            width: 20px; 
+            height: 20px; 
+            background:whitesmoke; 
+            border-radius: 50%; 
+            box-shadow: 0 0 20px rgb(153, 127, 129),  
+                        0 0 40px rgb(153, 127, 129),  
+                        0 0 60px rgb(153, 127, 129),  
+                        0 0 80px rgb(153, 127, 129), 
+                        0 0 120px rgb(153, 127, 129),  
+                        0 0 220px rgb(153, 127, 129), 
+                        0 0 320px rgb(153, 127, 129); 
+            transition: 2s; 
+        } 
+      
+        .spicy:hover { 
+            box-shadow: 0 0 0 30px rgb(248, 10, 10),  
+                        0 0 0 60px rgb(224, 83, 83), 
+                        0 0 0 100px rgb(202, 68, 68), 
+                        0 0 0 120px rgb(143, 13, 13),  
+                        0 0 0 200px rgb(175, 15, 15),  
+                        0 0 0 400px rgb(105, 4, 4),  
+                        0 0 0 450px rgb(43, 1, 1); 
+        } 
+    </style> 
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="spicy"></div>
+</body>
+</html>
