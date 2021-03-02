@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+
+.loading {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.loading span{
+    display: block;
+    position: absolute; 
+    bottom: 0;
+    background: rgb(248, 252, 37);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    animation: loading 3s infinite ease-in-out;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+        background: cyan;
+        box-shadow: darkcyan;
+    }
+    25%{
+        transform: rotate(90deg);
+        background: rgb(0, 255, 106);
+        box-shadow: rgb(2, 190, 12);
+    }
+    50%{
+        transform: rotate(50deg);
+        background: rgb(0, 153, 255);
+        box-shadow: rgb(0, 37, 201);
+    }
+    75%{
+        transform: rotate(360deg);
+        background: rgb(250, 127, 127);
+        box-shadow: rgb(243, 23, 23), blueviolet;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
